@@ -13,7 +13,7 @@ const AdminLoginForm = () => {
 
     // Send data to the server
     try {
-      const response = await fetch("http://localhost/find-User", {
+      const response = await fetch("https://portfolio-back-g5on.onrender.com/find-User", {
         method: "POST",
         headers: { "content-Type": "application/json" },
         body: JSON.stringify(data),
