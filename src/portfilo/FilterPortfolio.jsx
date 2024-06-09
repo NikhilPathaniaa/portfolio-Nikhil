@@ -4,7 +4,7 @@ import Portfolio from "./Portfolio";
 const FilterPortfolio = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost/find/Post")
+    fetch("https://portfolio-back-g5on.onrender.com/find/Post")
       .then((res) => res.json())
       .then((result) => {
         setData(result.data);

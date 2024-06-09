@@ -33,7 +33,7 @@ const Otp = ({ id, onClose }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost/submit-otp?otp=${otp}&id=${id}&status=${status}`, {
+      const response = await fetch(`https://portfolio-back-g5on.onrender.com/submit-otp?otp=${otp}&id=${id}&status=${status}`, {
         method: "POST",
         headers: { "content-Type": "application/json" },
       });

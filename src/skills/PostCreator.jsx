@@ -18,7 +18,7 @@ const PostCreator = ({ placeholder }) => {
     const data = { title, client, languages, theme, preview, content, image, video };
     console.log(data);
 
-    fetch("http://localhost/add/post", {
+    fetch("https://portfolio-back-g5on.onrender.com/add/post", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(data),
