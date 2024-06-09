@@ -1,0 +1,60 @@
+/* Carousel section styles */
+.carousel-section {
+  position: relative;
+  height: 1000vh; /* Equivalent to h-[300vh] */
+  background-color: #fff; /* Equivalent to bg-neutral-900 */
+}
+
+.carousel-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100vh; /* Equivalent to h-screen */
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  gap: 1rem; /* Equivalent to gap-4 */
+}
+
+/* Card styles */
+.scroll-card {
+  position: relative;
+  height: 80vh; /* Equivalent to h-[450px] */
+  width: 55vw; /* Equivalent to w-[450px] */
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: #e5e5e5; /* Equivalent to bg-neutral-200 */
+}
+
+.scroll-card-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transition: transform 0.3s; /* Equivalent to transition-transform duration-300 */
+}
+
+.scroll-card:hover .scroll-card-image {
+  border-radius: "25px";
+  transform: scale(1.1); /* Equivalent to group-hover:scale-110 */
+}
+
+.scroll-card-text {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+}
+
+.scroll-card-text p {
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  padding: 2rem; /* Equivalent to p-8 */
+  font-size: 4rem; /* Equivalent to text-6xl */
+  font-weight: 900; /* Equivalent to font-black */
+  text-transform: uppercase;
+  color: white;
+  backdrop-filter: blur(1rem); /* Equivalent to backdrop-blur-lg */
+}

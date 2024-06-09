@@ -1,0 +1,22 @@
+
+  
+  .mainContainer{
+    margin: 10px;
+  }
+  
+  .mainContainer .container{
+    padding: 40px 0;
+  }
+  
+  .mainContainer .container img{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .slick-prev,
+.slick-next,slick-bottom {
+    display: none !important;
+}
