@@ -14,7 +14,7 @@ import Error404 from "./error/Error404";
 import Blogs from "./blogs/Blogs";
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="https://portfolio-nikhil.onrender.com/">
       <div className="bg-homeBg dark:bg-homeTwoBg-dark min-h-screen bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
         <DayNight />
 
