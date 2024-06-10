@@ -10,11 +10,11 @@ import Resume from "./resume/Resume";
 import FilterPortfolio from "./portfilo/FilterPortfolio";
 import AdminMain from "./admin/AdminMain";
 import AdminLoginForm from "./admin/AdminLoginForm";
-// import Error404 from "./error/Error404";
+import Error404 from "./error/Error404";
 import Blogs from "./blogs/Blogs";
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/my-app">
       <div className="bg-homeBg dark:bg-homeTwoBg-dark min-h-screen bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
         <DayNight />
 
@@ -30,6 +30,7 @@ function App() {
             <div>
               <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">
                 <Routes>
+                  <Route path="*" element={<Error404 />} />
                   <Route path="/Admin" element={<AdminMain />}></Route>
                   <Route path="/" element={<About />}></Route>
                   <Route path="/About" element={<About />}></Route>
@@ -41,7 +42,7 @@ function App() {
                 </Routes>
 
                 <Footer />
-                {/* <Error404/> */}
+                {/*  */}
                 {/* <SliderPost /> */}
               </div>
             </div>
